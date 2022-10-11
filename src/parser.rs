@@ -919,7 +919,7 @@ pub fn parse_args_list_prime(token_buffer: &mut VecDeque<Token>) -> Box<Option<A
                 args_list_prime,
             }))
         }
-        TokenType::RBrace => Box::new(None),
+        TokenType::RParen => Box::new(None),
         _ => panic!(
             "Expected ',' expr or end of args got {:?}",
             peek_next_token(token_buffer)

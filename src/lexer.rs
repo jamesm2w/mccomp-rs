@@ -91,9 +91,9 @@ impl Lexer {
             tokens.push(token);
         }
 
-        for token in tokens.iter() {
-            println!("({:2}, {:2})  Token <{:?}>    \tLexeme {:?}", token.line_no, token.column_no, token.token_type, token.lexeme);
-        }
+        // for token in tokens.iter() {
+        //     println!("({:2}, {:2})  Token <{:?}>    \tLexeme {:?}", token.line_no, token.column_no, token.token_type, token.lexeme);
+        // }
             
         println!("Lexer Finished");
         inst.token_buffer = tokens;
